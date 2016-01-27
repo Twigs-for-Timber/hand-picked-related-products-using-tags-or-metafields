@@ -1,0 +1,44 @@
+{% comment %}
+  Using Tags
+{% endcomment %}
+
+{% assign related_products = ‘’ %}
+{% for tag in product.tags %}
+  {% if tag contains ‘related-’ %}
+    {% assign product_handle = tag | remove: ‘related-’ %}
+    {% assign related_products = related_products | append: ‘,’ | append: product_handle %}
+  {% endif %}
+{% endfor %}
+{% assign related_products = related_products | remove_first: ‘,’ | split: ‘,’ %}
+
+{% if related_products.size > 0 %}
+<div class=”related-products”>
+  <h2>Related Products</h2>
+  <div class=”grid grid-uniform”>
+    {% assign grid_item_width = 'large--one-quarter medium--one-half small--one-half' %}
+    {% for product_handle in related_products %}
+      {% assign product = all_products[product_handle] %}
+      {% include ‘product-grid-item’ %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% comment %}
+  Using Metafields
+{% endcomment %}
+
+{% assign related_products = product.metafields.related.products | replace: ' ,', ',' | replace: ', ', ',' | split: ',' %}
+
+{% if related_products.size > 0 %}
+<div class=”related-products”>
+  <h2>Related Products</h2>
+  <div class=”grid grid-uniform”>
+    {% assign grid_item_width = 'large--one-quarter medium--one-half small--one-half' %}
+    {% for product_handle in related_products %}
+      {% assign product = all_products[product_handle] %}
+      {% include ‘product-grid-item’ %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
