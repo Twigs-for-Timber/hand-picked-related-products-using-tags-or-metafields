@@ -5,8 +5,8 @@
   |_| |_____|_|_  |___|
               |___|    
 
-Twigs for Timber by Cam @ Elkfox
-http://experts.shopify.com/elkfox
+Twigs by Gina at 3Five
+http://3five.com/
 </pre>
 
 # News With Feature Images & Videos
