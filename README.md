@@ -12,7 +12,6 @@ http://experts.shopify.com/elkfox
 # News With Feature Images & Videos
 
 * [Article](http://twigs.club/library/hand-picked-related-products-using-tags-or-metafields)
-* [Demo](http://twigs-demo.myshopify.com/pages/hand-picked-related-products-using-tags-or-metafields)
 * [Download](https://github.com/Twigs-for-Timber/hand-picked-related-products-using-tags-or-metafields/archive/master.zip)
 
 
