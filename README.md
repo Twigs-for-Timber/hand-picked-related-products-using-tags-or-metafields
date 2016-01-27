@@ -13,8 +13,3 @@ http://3five.com/
 
 * [Article](http://twigs.club/library/hand-picked-related-products-using-tags-or-metafields)
 * [Download](https://github.com/Twigs-for-Timber/hand-picked-related-products-using-tags-or-metafields/archive/master.zip)
-
-
-<a href="https://gratipay.com/Cam/">
-  <img alt="Support via Gratipay" src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.svg" style="max-width:100px;" />
-</a>
